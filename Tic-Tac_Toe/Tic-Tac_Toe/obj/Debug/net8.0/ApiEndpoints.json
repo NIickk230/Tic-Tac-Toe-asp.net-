@@ -1,0 +1,59 @@
+[
+  {
+    "ContainingType": "Tic_Tac_Toe.Controllers.GameController",
+    "Method": "GetBoard",
+    "RelativePath": "api/_game/board",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tic_Tac_Toe.Controllers.GameController",
+    "Method": "MakeMove",
+    "RelativePath": "api/_game/move",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "move",
+        "Type": "Tic_Tac_Toe.Controllers.MoveRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tic_Tac_Toe.Controllers.GameController",
+    "Method": "ResetGame",
+    "RelativePath": "api/_game/reset",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tic_Tac_Toe.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Tic_Tac_Toe.WeatherForecast, Tic-Tac_Toe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

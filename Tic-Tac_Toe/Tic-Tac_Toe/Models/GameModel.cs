@@ -28,13 +28,13 @@
 
         public bool CheckWin()
         {
-            for (int i = 0;i < 3;i++)
+            for (int i = 0; i < 3; i++)
             {
                 if (Board[i, 0] == CurrentPlayer && Board[i, 0] == CurrentPlayer && Board[i, 0] == CurrentPlayer)
                     return true;
             }
 
-            for(int i = 0; i < 3; i++)
+            for (int i = 0; i < 3; i++)
             {
                 if (Board[0, i] == CurrentPlayer && Board[1, i] == CurrentPlayer && Board[2, i] == CurrentPlayer)
                     return true;
@@ -47,7 +47,9 @@
                 return true;
 
             return false;
-        }
+        }  
 
     }
+
+    
 }
