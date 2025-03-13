@@ -21,7 +21,7 @@ namespace Tic_Tac_Toe.Controllers
             if (move.Row < 0 || move.Row >= 3 || move.Col < 0 || move.Col >= 3)
                 return BadRequest("invalid moce position");
 
-            if (_game.Board[move.Row, move.Col] != ' ')
+            if (_game.Board[move.Row][move.Col] != ' ')
                 return BadRequest("Cell is alreadu occupied");
 
             _game.MakeMove(move.Row, move.Col);
